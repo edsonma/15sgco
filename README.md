@@ -1,6 +1,5 @@
-# 15SGCO [Simposio de Geologia do Centro OESTE] (http://www15sgco.com.br) 
-# Avanços na Geologia do Brasil Central Goiania 
-# [03-06 de Setembro de 2017]
+# 15SGCO [Simposio de Geologia do Centro Oeste](http://www15sgco.com.br) 
+### Avanços na Geologia do Brasil Central Goiânia [03-06 de Setembro de 2017]
 
 ## Introduçao
 Sociedade Brasileira de Geologia - Núcleo Centro-Oeste, em parceria com a Universidade Federal de  Goiás e instituições parceiras, realizará o XV Simpósio de Geologia do Centro Oeste.
