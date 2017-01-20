@@ -15,6 +15,81 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:10px !important; padding-bottom:0 !important;
+    height: 40px;
+}
+.navbar {min-height:40px !important;}
+
+.navbar-default {
+    background-color: #316054;
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #eee;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #babaca;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #aaa;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #eee;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #fff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: ##777;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #aaa;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #babaca;
+    }
+}
+
 .img-portfolio {
     margin-bottom: 30px;
 }
@@ -26,7 +101,7 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-    height: 50%;
+    height: 45%;
 }
 
 header.carousel .item,
@@ -65,6 +140,10 @@ header.carousel .fill {
 .period {
     display: block;
     font-style: italic;
+}
+
+.indent {
+  text-indent: 30px;
 }
 
 /* Footer Styles */
