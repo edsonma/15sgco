@@ -13,8 +13,6 @@ body {
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    padding-left: 80px;
-    padding-right: 80px;
 }
 
 
@@ -29,8 +27,7 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-    height: 50%;
-    width: 100%;
+    height: 40%;
 }
 
 header.carousel .item,
@@ -98,4 +95,9 @@ footer {
     header.carousel .carousel {
         height: 70%;
     }
+}
+
+
+.apresentacao-row {
+  background: #fafafa;
 }

@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,83 +31,100 @@
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">Home</a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="small-logo-container">
+            <a class="small-logo" href="#">↥Home</a>
           </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-                      <a href="index.html#presentation">Apresentação</a>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Informações<b class="caret"></b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="active"><a href="#">Active</a></li> -->
+            <li><a href="index.html#presentation">Apresentação</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Informações<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                      <li>
-                        <!-- blog-home-1.html -->
-                        <a href="">Datas e Prazos</a>
-                      </li>
-                      <li>
-                        <!-- blog-home-1.html -->
-                        <a href="">Local do Evento</a>
-                      </li>
-                      <li>
-                        <!-- blog-home-1.html -->
-                        <a href="">Hospedagens</a>
-                      </li>
+                        <li>
+                            <!-- blog-home-1.html -->
+                            <a href="">Datas e Prazos</a>
+                        </li>
+                        <li>
+                            <!-- blog-home-1.html -->
+                            <a href="">Local do Evento</a>
+                        </li>
+                        <li>
+                            <!-- blog-home-1.html -->
+                            <a href="">Hospedagens</a>
+                        </li>
                     </ul>
-                  </li>
-                  <li>
-                      <a href="schedule.html">Programaçao</a>
-                  </li>
-                  <li>
-                      <!-- services.html -->
-                      <a href="">Inscrições</a>
-                  </li>
-                  <li>
-                      <!-- services.html -->
-                      <a href="">Submissões</a>
-                  </li>
+                </li>
+            <li>
+            <li>
+                <a href="schedule.html">Programaçao</a>
+            </li>
+            <li>
+                <!-- services.html -->
+                <a href="">Inscrições</a>
+            </li>
+            <li>
+                <!-- services.html -->
+                <a href="">Submissões</a>
+            </li>
 
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Realização<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <!-- blog-home-1.html -->
-                        <a href="">Comissão Organizadora</a>
-                      </li>
-                      <li>
-                        <!-- blog-home-1.html -->
-                        <a href="">Comitê Técnico Científico</a>
-                      </li>
-                      <li>
-                        <!-- blog-home-1.html -->
-                        <a href="">Patrocinadores e Apoio</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                      <a href="">Downloads</a>
-                  </li>
-                  <li>
-                      <a href="contact.html">Contato</a>
-                  </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Realização<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <!-- blog-home-1.html -->
+                  <a href="">Comissão Organizadora</a>
+                </li>
+                <li>
+                  <!-- blog-home-1.html -->
+                  <a href="">Comitê Técnico Científico</a>
+                </li>
+                <li>
+                  <!-- blog-home-1.html -->
+                  <a href="">Patrocinadores e Apoio</a>
+                </li>
               </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+            </li>
+            <li>
+                <a href="">Downloads</a>
+            </li>
+            <li>
+                <a href="contact.html">Contato</a>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
-      <!-- /.container -->
-    </nav>
+    </div>
+
+    <div class="container-fluid big-logo-row">
+      <div class="container">
+        <div class="row">            
+            <div class="col-xs-3 big-logo-container">
+                <img align="right" class="img-responsive" src="images/logon.png" alt="">             
+            </div>
+            <div class="col-xs-8 big-logo-container">
+                <h2 class="big-logo text-center">            
+                    ↧XV SIMPÓSIO DE GEOLOGIA DO CENTRO-OESTE<br>
+                    AVANÇOS NA GEOLOGIA DO BRASIL CENTRAL<br>
+                    GOIÂNIA, 03-06 DE SETEMBRO DE 2017
+                </h2>
+            </div><!--/.col-xs-12 -->
+            <div class="col-xs-8 big-logo-container"></div> 
+        </div><!--/.row -->
+      </div><!--/.container -->
+    </div><!--/.container-fluid -->
 
     <!-- Page Content -->
     <div class="container">
@@ -228,6 +246,10 @@
     <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+
+    <!-- Navbar custom JavaScript -->
+    <script src="js/navbar.js"></script>
+
 
 </body>
 
