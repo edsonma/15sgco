@@ -1,146 +1,325 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Sticky Table Headers Revisited | Demo 2</title>
-    <meta name="description" content="Sticky Table Headers Revisited: Creating functional and flexible sticky table headers" />
-    <meta name="keywords" content="Sticky Table Headers Revisited" />
-    <meta name="author" content="Codrops" />
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <!--[if IE]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
+
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="small-logo-container">
+            <a class="small-logo" href="#">↥Home</a>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li class="active"><a href="#">Active</a></li> -->
+            <li><a href="index.html#presentation">Apresentação</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Informações<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <!-- blog-home-1.html -->
+                            <a href="">Datas e Prazos</a>
+                        </li>
+                        <li>
+                            <!-- blog-home-1.html -->
+                            <a href="">Local do Evento</a>
+                        </li>
+                        <li>
+                            <!-- blog-home-1.html -->
+                            <a href="">Hospedagens</a>
+                        </li>
+                    </ul>
+                </li>
+            <li>
+            <li>
+                <a href="schedule.html">Programaçao</a>
+            </li>
+            <li>
+                <!-- services.html -->
+                <a href="">Inscrições</a>
+            </li>
+            <li>
+                <!-- services.html -->
+                <a href="">Submissões</a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Realização<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <!-- blog-home-1.html -->
+                  <a href="">Comissão Organizadora</a>
+                </li>
+                <li>
+                  <!-- blog-home-1.html -->
+                  <a href="">Comitê Técnico Científico</a>
+                </li>
+                <li>
+                  <!-- blog-home-1.html -->
+                  <a href="">Patrocinadores e Apoio</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+                <a href="">Downloads</a>
+            </li>
+            <li>
+                <a href="contact.html">Contato</a>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container-fluid big-logo-row">
+      <div class="container">
+        <div class="row">            
+            <div class="col-xs-3 big-logo-container">
+                <img align="right" class="img-responsive" src="images/logon.png" alt="">             
+            </div>
+            <div class="col-xs-8 big-logo-container">
+                <h2 class="big-logo text-center">            
+                    ↧XV SIMPÓSIO DE GEOLOGIA DO CENTRO-OESTE<br>
+                    AVANÇOS NA GEOLOGIA DO BRASIL CENTRAL<br>
+                    GOIÂNIA, 03-06 DE SETEMBRO DE 2017
+                </h2>
+            </div><!--/.col-xs-12 -->
+            <div class="col-xs-8 big-logo-container"></div> 
+        </div><!--/.row -->
+      </div><!--/.container -->
+    </div><!--/.container-fluid -->
+
+    <!-- Page Content -->
     <div class="container">
 
-      <header>
-        <h1><em>Programaçao XV Simposio de Geologia do Centro-oeste</em> <span>Goiania, 03-06 de Setembro de 2017</span></h1> 
-<!-- <nav class="codrops-demos">
-  <a href="index.html">Basic Usage</a>
-  <a class="current-demo" href="index2.html">Biaxial Headers</a>
-  <a href="index3.html">Wide Tables</a>
-</nav> -->
-      </header>
-      <div class="component">
-        <h2>Programação</h2>
-         <p>Mussum Ipsum, cacilds vidis litro abertis.</p>
-        <table>
-          <thead>
-            <tr>
-              <th>HORÁRIO</th>
-              <th>Domingo, 03/09</th>
-              <th>Segunda, 04/09</th>
-              <th>Terça, 05/09</th>
-              <th>Quarta, 06/09</th>              
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>08:30</th>
-              <td> - </td>
-              <td>Geologia do Pré-Cambriano<br>Palestra 01</td>
-              <td>Geologia do Fanerozoico<br>Palestra 07</td>
-              <td>Geologia Econômica e Prospecção Mineral<br>Palestra 13</td>              
-            </tr>
-            <tr>
-              <th>09:20</th>
-              <td> - </td>
-              <td>Geologia do Pré-Cambriano<br>Palestra 02</td>
-              <td>Geologia do Fanerozoico<br> Palestra 08</td>
-              <td>Geologia Econômica e Prospecção Mineral<br>Palestra 14</td>
-            </tr>
-            <tr>
-              <th>10:10</th>
-              <td>Coffee Break</td>
-              <td>Coffee Break</td>
-              <td>Coffee Break</td>
-              <td>Coffee Break</td>
-            </tr>
-            <tr>
-              <th>10:30</th>
-              <td>-</td>
-              <td>Geologia do Pré-Cambriano<br>Palestra 03</td>
-              <td>Geologia do Fanerozoico<br> Palestra 09</td>
-              <td>Geologia Econômica e Prospecção Mineral<br>Palestra 15</td>
-            </tr>
-            <tr>
-              <th>11:20</th>
-              <td>-</td>
-              <td>Geologia do Pré-Cambriano<br>Mesa Redonda</td>
-              <td>Geologia do Fanerozoico<br>Mesa Redonda</td>
-              <td>Geologia Econômica e Prospecção Mineral<br>Mesa Redonda</td>
-            </tr>
-            <th>12:00</th>
-              <td>Almoço</td>
-              <td>Almoço</td>
-              <td>Almoço</td>
-              <td>Almoço</td>
-            </tr>            
-            <tr>
-              <th>14:00</th>
-              <td>Recepção dos inscritos e entrega de material</td>
-              <td>Geologia do Pré-Cambriano<br>Palestra 04</td>
-              <td>Geotecnologia e Geoengenharia<br>Palestra 10</td>
-              <td>Palestra Didática<br>Palestra 16</td>
-            </tr>
-            <tr>
-              <th>14:40</th>
-              <td>-</td>
-              <td>Geologia do Pré-Cambriano<br>Palestra 05</td>
-              <td>Geotecnologia e Geoengenharia<br>Palestra 11</td>
-              <td>Sessão para Jovens Pesquisadores</td>
-            </tr>
-            <tr>
-            <tr>
-              <th>15:20</th>
-              <td>-</td>
-              <td>Geologia do Pré-Cambriano<br>Palestra 06</td>
-              <td>Geotecnologia e Geoengenharia<br>Palestra 12</td>
-              <td>Sessão para Jovens Pesquisadores</td>
-            </tr>
-            <tr>
-              <th>16:10</th>
-              <td>Coffee Break</td>
-              <td>Coffee Break</td>
-              <td>Coffee Break</td>
-              <td>Coffee Break</td>
-            </tr>
-            <tr>
-              <th>16:30 - 18:00</th>
-              <td>-</td>
-              <td>Sessão Pôster</td>
-              <td>Sessão Pôster</td>
-              <td>Sessão para Jovens Pesquisadores</td>
-            </tr>
-            <tr>
-              <th>18:00 - 20:00</th>
-              <td>Solenidade de Abertura</td>
-              <td>Programação Cultural</td>
-              <td>Programação Cultural</td>
-              <td>Sessão para Jovens Pesquisadores</td>
-            </tr>
-            <tr>
-              <th>20:00 - 23:00</th>
-              <td>Coquetel</td>
-              <td>Programação Cultural</td>
-              <td>Programação Cultural</td>
-              <td>Sessão para Jovens Pesquisadores<br> (encerramento)</td>
-            </tr>
-          </tbody>
-        </table>        
-      </div>
-      <section class="related">
-        <p>de capivaris, leite de mula manquis. Detraxit consequat et quo num tendi nada</p>  
-      </section>
-    </div><!-- /container -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
-    <script src="js/jquery.stickyheader.js"></script>
-  </body>
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Programaçao                    
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Programacao</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Service Tabs -->
+        <div class="row">
+            <div class="col-lg-12">
+                
+            </div>
+            <div class="col-lg-12">
+
+                <ul id="myTab" class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#domingo" data-toggle="tab"><i class="fa fa-tree"></i> 03/09 - Domingo</a>
+                    </li>
+                    <li class=""><a href="#segunda-feira" data-toggle="tab"><i class="fa fa-car"></i> 04/09 - Segunda-feira</a>
+                    </li>
+                    <li class=""><a href="#terca-feira" data-toggle="tab"><i class="fa fa-support"></i> 05/09 - Terça-feira</a>
+                    </li>
+                    <li class=""><a href="#quarta-feira" data-toggle="tab"><i class="fa fa-database"></i> 06/09 - Quarta-feira</a>
+                    </li>
+                </ul>
+                <p></p>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="domingo">                        
+                        <table class="table table-hover">
+                            <thead>
+                            <tr class="danger">
+                                <td><h4>Horario</h4></td>
+                                <td><h4>Evento</h4></td>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td>14:00</td>
+                                <td>Recepção dos inscritos e entrega de material</td>
+                            </tr>
+                            <tr class="active">
+                                <td>18:00 - 20:00</td>
+                                <td>Solenidade de Abertura</td>
+                            </tr>
+                            <tr>
+                                <td>20:00 - 23:00</td>
+                                <td>Coquetel</td>
+                            </tr>                                                      
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="segunda-feira">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr class="danger">
+                                <td><h4>Horario</h4></td>
+                                <td><h4>Evento</h4></td>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td>08:30</td>
+                                <td>Geologia do Pré-Cambriano<br> Palestra 1</td>
+                            </tr>
+                            <tr class="active">
+                                <td>09:20</td>
+                                <td>Geologia do Pré-Cambriano<br> Palestra 2</td>
+                            </tr>
+                            <tr>
+                                <td>10:10</td>
+                                <td>Coffee Break</td>
+                            </tr>             
+                            <tr class="active">
+                                <td>10:30</td>
+                                <td>Geologia do Pré-Cambriano<br> Palestra 3</td>
+                            </tr>
+                            <tr>
+                                <td>11:20</td>
+                                <td>Geologia do Pré-Cambriano<br> Mesa Redonda</td>
+                            </tr>
+                            <tr class="active">
+                                <td>14:00</td>
+                                <td>Geologia do Pré-Cambriano<br> Palestra 4</td>
+                            </tr>               
+                            </tr>
+                            <tr>
+                                <td>14:40</td>
+                                <td>Geologia do Pré-Cambriano<br> Palestra 5</td>
+                            </tr>     
+                            </tr>
+                            <tr class="active">
+                                <td>15:20</td>
+                                <td>Geologia do Pré-Cambriano<br> Palestra 6</td>
+                            </tr>     
+                            </tr>
+                            <tr>
+                                <td>16:10</td>
+                                <td>Coffee Break</td>
+                            </tr>     
+                            </tr>
+                            <tr class="active">
+                                <td>16:30 - 18:00</td>
+                                <td>Sessão Pôster</td>
+                            </tr>     
+                            <tr>
+                                <td>18:00 - 20:00</td>
+                                <td>Programação Cultural</td>
+                            </tr>     
+                            <tr class="active">
+                                <td>20:00 - 23:00</td>
+                                <td>Programação Cultural</td>
+                            </tr>     
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="terca-feira">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr class="danger">
+                                <td><h4>Horario</h4></td>
+                                <td><h4>Evento</h4></td>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td>14:00</td>
+                                <td>Recepção dos inscritos e entrega de material</td>
+                            </tr>
+                            <tr class="active">
+                                <td>18:00 - 20:00</td>
+                                <td>Solenidade de Abertura</td>
+                            </tr>
+                            <tr>
+                                <td>20:00 - 23:00</td>
+                                <td>Coquetel</td>
+                            </tr>                                                      
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="quarta-feira">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr class="danger">
+                                <td><h4>Horario</h4></td>
+                                <td><h4>Evento</h4></td>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td>14:00</td>
+                                <td>Recepção dos inscritos e entrega de material</td>
+                            </tr>
+                            <tr class="active">
+                                <td>18:00 - 20:00</td>
+                                <td>Solenidade de Abertura</td>
+                            </tr>
+                            <tr>
+                                <td>20:00 - 23:00</td>
+                                <td>Coquetel</td>
+                            </tr>                                                      
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright 2017 - Universidade Federal de Goiás - Instituto d Ciências de Tecnologia - <a href="https://geologia.fct.ufg.br/ ">Geologia/UFG</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/navbar.js"></script>
+
+</body>
+
 </html>
